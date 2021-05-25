@@ -1,10 +1,10 @@
 ﻿using System;
 
-namespace Rakendus
+namespace EmployeeManagement.Models
 {
     public class Department
     {
-        public int EmployeeId { get; set; }
+        public int DepartmentId { get; set; }
         public string DepartmentName { get; set; }
     }
 }

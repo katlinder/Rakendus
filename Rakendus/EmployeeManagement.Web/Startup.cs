@@ -11,7 +11,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Empoymanagement.Web
+namespace EmployeeManagement.Web
 {
     public class Startup
     {
@@ -28,7 +28,7 @@ namespace Empoymanagement.Web
         {
             services.AddRazorPages();
             services.AddServerSideBlazor();
-
+          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

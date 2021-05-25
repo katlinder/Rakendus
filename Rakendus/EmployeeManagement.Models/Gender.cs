@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Rakendus
+namespace EmployeeManagement.Models
 {
     public enum Gender
     {
-        Male, 
-        Famale,
+        Male,
+        Female,
         Other
     }
+
 }
