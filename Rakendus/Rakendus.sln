@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rakendus", "Rakendus.csproj", "{238EAB99-E4AC-48DC-A16B-5B1BC361B427}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Empoymanagement.Web", "..\Empoymanagement.Web\Empoymanagement.Web.csproj", "{81E89B71-8EEE-4011-B4AF-14DC0265532D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{238EAB99-E4AC-48DC-A16B-5B1BC361B427}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{238EAB99-E4AC-48DC-A16B-5B1BC361B427}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{238EAB99-E4AC-48DC-A16B-5B1BC361B427}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{238EAB99-E4AC-48DC-A16B-5B1BC361B427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81E89B71-8EEE-4011-B4AF-14DC0265532D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81E89B71-8EEE-4011-B4AF-14DC0265532D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81E89B71-8EEE-4011-B4AF-14DC0265532D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81E89B71-8EEE-4011-B4AF-14DC0265532D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6A25E37-F73D-4808-AFD9-EDDDBD205518}
+	EndGlobalSection
+EndGlobal
