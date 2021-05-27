@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using EmployeeManagement.Api.Models;
 using EployeeManagement.API.Models2;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -32,6 +33,10 @@ namespace EployeeManagement.API
             services.AddDbContext<AppDbContext>(options =>
                  options.UseSqlServer(Configuration.GetConnectionString("DBConnection")));
 
+           
+                services.AddScoped<IDepartmentRepository, DepartmentRepository>();
+                services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            
             services.AddControllers();
         }
 
