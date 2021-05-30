@@ -20,4 +20,5 @@ public class Employee
     public Gender Gender { get; set; }
     public int DepartmentId { get; set; }
     public string PhotoPath { get; set; }
+    public Department Department { get; set; }
 }
