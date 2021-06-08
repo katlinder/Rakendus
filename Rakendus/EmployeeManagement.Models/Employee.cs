@@ -1,4 +1,5 @@
 ﻿using EmployeeManagement.Models;
+using EmployeeManagement.Models.CustomValidators;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -14,7 +15,9 @@ public class Employee
     public string FirstName { get; set; }
     [Required]
     public string LastName { get; set; }
-    [Required]
+    [EmailAddress]
+    [EmailDomainValidator(AllowedDomain = "pragimtech.com")]
+    
     public string Email { get; set; }
     public DateTime DateOfBrith { get; set; }
     public Gender Gender { get; set; }
