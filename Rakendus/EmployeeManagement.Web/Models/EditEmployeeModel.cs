@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace EmployeeManagement.Models.Models
 {
     public class EditEmployeeModel
-    
+
     {
         public int EmployeeId { get; set; }
         [Required(ErrorMessage = "FirstName is mandatory")]
@@ -21,12 +21,13 @@ namespace EmployeeManagement.Models.Models
         [EmailDomainValidator(AllowedDomain = "pragimtech.com")]
         public string Email { get; set; }
         [CompareProperty("Email",
-            ErrorMessage = "Email and Confirm Email must match")]       
+            ErrorMessage = "Email and Confirm Email must match")]
         public string ConfirmEmail { get; set; }
         public DateTime DateOfBrith { get; set; }
         public Gender Gender { get; set; }
         public int DepartmentId { get; set; }
         public string PhotoPath { get; set; }
-        public Department Department { get; set; }
+        [ValidateComplexType]
+        public Department Department { get; set; } = new Department();
     }
 }
