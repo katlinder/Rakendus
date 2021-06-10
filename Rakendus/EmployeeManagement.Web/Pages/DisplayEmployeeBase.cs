@@ -28,15 +28,27 @@ namespace EmployeeManagement.Web.Pages
         [Inject]
         public NavigationManager NavigationManager { get; set; }
 
-        protected async Task Delete_Click()
-        {
-            await EmployeeService.DeleteEmployee(Employee.EmployeeId);
-            await OnEmployeeDeleted.InvokeAsync(Employee.EmployeeId);
-        }
+       
             protected async Task CheckBoxChanged(ChangeEventArgs e)
         {
             IsSelected = (bool)e.Value;
             await OnEmployeeSelection.InvokeAsync(IsSelected);
+        }
+
+        protected PragimTechComponents.ConfirmBase DeleteConfirmation { get; set; }
+
+        protected void Delete_Click()
+        {
+            DeleteConfirmation.Show();
+        }
+
+        protected async Task ConfirmDelete_Click(bool deleteConfirmed)
+        {
+            if (deleteConfirmed)
+            {
+                await EmployeeService.DeleteEmployee(Employee.EmployeeId);
+                await OnEmployeeDeleted.InvokeAsync(Employee.EmployeeId);
+            }
         }
     }
 }
