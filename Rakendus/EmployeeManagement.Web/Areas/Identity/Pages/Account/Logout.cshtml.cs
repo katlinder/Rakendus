@@ -36,7 +36,11 @@ namespace EmployeeManagement.Web.Areas.Identity.Pages.Account
             }
             else
             {
+<<<<<<< HEAD
                 
+=======
+                // Redirect the user to application root
+>>>>>>> d359d13064f006fb5a83f2fca8b0e905528ec4a5
                 return LocalRedirect("~/");
             }
         }
